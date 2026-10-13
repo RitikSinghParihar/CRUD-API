@@ -4,7 +4,7 @@ const express=require("express");
 const app=express();
 const port=3000;
 const mongoose = require('mongoose');
-const User = require('./model/user.model');
+const User = require('./Model/user.model');
 const dns = require('node:dns');
 
 
@@ -38,3 +38,4 @@ app.use("/api/users",require("./routes/user.routes"));
 app.listen(port,()=>{
   console.log(`Server is running on port ${port}`);
 });
+
