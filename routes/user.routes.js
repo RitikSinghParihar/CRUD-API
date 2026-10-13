@@ -1,12 +1,5 @@
 const express=require("express");
 const router=express.Router();
-const {
-  postroute,
-  getroute,
-  dynamicroute,
-  updateroute,
-  deleteroute,
-} = require("../controllers/users.controllers");
 
 
 
@@ -29,4 +22,4 @@ updateroute
 //Deleting user
 router.delete("/:id",deleteroute);
 
-module.exports = router;
+export default router;

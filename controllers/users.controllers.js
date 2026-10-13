@@ -1,7 +1,5 @@
 
 
-const User = require("../model/user.model");
-
 const postroute = async(req,res)=>{
   try{
     const user= await User.create(req.body);
